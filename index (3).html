@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABnCAMAAAAqn6zLAAABd1BMVEX////v7+8nN3IsU6T1txjznSBzh7svN3xrcqP4oB709PJEX6YrSJkcTaMhQZQjK3Ryd6PZIyYsTJxnPHIbLGseL2w0PH8aOpH2+PtBQXIvOXkVJ2ckNHBugro6SH7o6vAnJV7WJChlcZkVHGVkZZFuUEkjM4ZweqBzW135+vzzlg5qa3AbQKT/vBEzQnqPl7XTFRlJVocjTquxtsyzvts4VJ+DlcMWFFL++u/98dPZ2+GEjKy+wtAdS64qUqbf5fENH2GhqMHK0uZHTotCUo8qPYYcKHZJRnJuX3FtbJBzd6ljKF72pjH1tVb0yYf03r7zz9DriYneQEP4r0P/6+n2uLboamv2vzf6133rlpffUlX3yVD63pX2vSr503H86bfgWl1nYZjyvXDxyI743Nzwz57v5tj1vGj+9d6eq9D/23v/zzv74qFHbsHFupXsxFailGXaqixydXS6mUGEf2ZKYo+lkE/NpDOxlkdYYX5UdLWJialeXIaRqQX1AAAIaklEQVRogc2aj3vaxhnHJRUjLEBQcsKyJUsO8UJpZogQEFfIBuG6rdMkdm03Sxo7WZw4G+22tN5YFtw/fu/pByDQSWDjPP36ebByvz68d++9d69iihoouzMiRVGWleVg7XwNSkaq3qAClWDz+Ty74kgAobVgsewuKJXKpULFrwZz1tk8exf0zVB3xvTAFq6Bdkt8OkSpHB8ncdhvv/D0pyB9t5dI7O3tZbPZOOjhre+/v0XUborMufvFwmKYHj1+ss+JYskRd/DD4f37nxN0Kx3GCcXYOjrb3xx0Of7x6e37waxwzsLiQpS+XPzLs6+GqLfPf7qNSbd9mgNnYSEWi/lQBz/8dPtzbNb8OaAXJ18N+x48f+qwnEmEX9NxvvQriBOLnb58NdL9+ODH50//eniIzTk8fPqaj+DgYR8dPT578ubN+fn5mzdPzh4fPYLSxQmObdSmb4zj47cHoLfH4upSGAcYR2fn++9omhY9wfO7/fOzxwueXbFRwUoFDVYK58AGoZ2hPXEchzeMKHLvzv/2yLY2NqaXrzYnBgu1J5OlRxkcR1EcR9OqYUsVS5v7T44WFsc52KhXf9+cicN5DCigDdOqFAs9TYPorWi9QtOqdej9kxcbG5Oo0/cnr0Z8nSNzEgMOhxl6s6AwgoSFbOEHRuk1up39n38JQsVOX7x8dvIP0Mmz9/f+HMXhKNpsrisykpAgMz7JAi7c/ueq9a/3G4EoVxuxKA7HmU2NEQAxxhiw5FQ6Xd3uN3/9LYwUzuFofZ0hMxx9BtpOV6vJi3+fEq0K5SQqGhLCEAOOzapWe/8hocI4+ZUpKEMOqLqVBhRM4AQrnDMFxccBo7a2tnsX//0Q29gYoW1sXMyZA0pvbaWTvYtf//fht5iDi51++Dh/jrNU1ep2/evex3sXFxf3PvaSOeL94DocmwWqukpvk+871+X4lfvjc2RHN8aR7bCGcJgAIQT30O05czBCYBSt0KxYumlLt7rxfnI7ijU1BxACINabumHg8DoUVRLVTqOfTIexpuQICDFawTJVDo5UjvbJbd+qxbFZ1+EIkqw1HQY9qWGXVm21zgeTpuAgqVzUYbQghp8D6jSSgaRIjiwpFYMjQsY5YFS3HzB7ERwZlYESOF0kDkWptf6ER4RzBLkYRQngwDWqmxyzKZyj6VGQYA7Y1Kj7bArjZDSDiqQQOOARq6MmhXKyU1hD5FClWpLfno5DX4cDrtcYmHSjHGxS+lNwwCR3lW6aQ5Uan6U/BYeiwB0+CYdq9flPwoFF4lMh96q5cSixEXZ/mx8nLG/0cewDeuRxNFBMwwnJt30cnPuqzqicYcIVRB2QOLvO7aS24Gf0uTSLPRxdLGtK004ijaICd5KyVlG9GNsrK0xRdDo1FU2D6GsPXYCEuafOxOHW7wjtAuZYZZymypAQa6ZdSek4JxY6Tqf1NkLtgm1EBfLkNjMjpyAxqMjRXEVAOP2FhFiWyhgEXwHnYlLT6VRA+EJhwZNRhnJBuRKHMhkEFKUHmbEsaQbUQhFOXr0BbY79j+HTzByKhl+yAEc5bWqoqOJKqojJrg3u6LipjguvysFzgQrY0yjDsh2OMhQkl3swoiZ6HJkRynpPwnZekaMjWBfT9jP3pkVVkCysA4wR9AEHT6Tsm84ZORZ8ybIxskU5Gr43qlBF+Cy4HKGoyDhnKRfluXEoEw/YgtWQhbLhcCRLx6ZIFRNda950yo0++KNol1OqhmTUdDkV+1OjxzmE9/6v8xMcE/xAKODrPGVUDPiFHcNemCZikKZ6HKMsQak+yokv5fpEToLg17Rq9toQD7imBEPhQNrB+ZHlcSjrTrE0zkkROIl85rU6vk9lhK/csE9hPKTTiuBGgpIGTwXR46hNWCx9uvW5ZDM7hhdHHQ4Hboz3pCTBp6QYMJLMmHZrCyaQ6XgcWz5OkucJ//9jsWzeHNjTliUc3yCOInt7CNK6wcHqSwXn/FHLgtwulgqS3B5wJIiBLqdV5/luMKfD5jOWd7bpiuKcC5x9LjBlzQKnxi9Kdc5pDieCoqnwWbbcAUwoqbjnT41P8Z1gjprPZ4qDw4xWVe84VSHLxqkwnH4qLnXb43fb+IWz6A5N4WdvsMZSqq5OMux+CZbdUUcObnr4yHGDp+nuIbA8cZFQqWfyrD7FRWQKDp62GqmyBROXnQun1Of5JGHaoDbLrngedz1ODW6JBG/D6rAsm4hOtSIxYh+8oBVSn82wrBWZOkZyurA6hE3qyMizbDkyR43CdOp8qDmgSmYlo6kRoAiMmlzKkZ3NUSkBoKhsOGKIVcDES+GNKHWHZTOXM74P8akBmD5piw5lrLCsFA4K7Y99IBe+OI50dmUFVcJAYb1rubBIMKoS+AKCM4UMisJ0oxbHBV1KAAqZuhAMzBnfiF4cR2IWQG0yKBxDDNNBIASgPZUAInVr2NYQw2cQ6BIJqE16e0XoE+dxuJneGhcE+dOyGegNgT1aEDtnxmCvk5HQFiwuwKSg9rUkYFJTeppPJiMJEizSJGiyrdhNQRSoT7VvJtTRpLW1B99Ozt1EyxZcCiHYEO43kVKLawCSJ2LDeLtuHS9NfJpgEyzRwn8W9OB3w2+Sv1FrFfwslevO6gE+mRoGrVXoUZLvq9SwMakrz5kn9VK2TTJHHG+kugPGgAPMtDkJck26HE7eoKrVyC3lUnz/an42LrVir9Ky5U2eWy52k9jNUt05GGOrZK7bJv3uvqx3Cmt9Hq/MaucKe5MkUV92SKZ3v+70sZelkrVrudmk1EvGJu2BQ1Bi5+HuXcDMZf3HZRTXXFInu5vZ3eXr8es6M0HmnkNiM/jv+W6KAhIdUia/u7vamfPC+EVjEss+vFkKFtiUvQLl/zdRmq3FEjpfAAAAAElFTkSuQmCC">
+<title>Tu opinión mejora nuestra escuela</title>
+<style>
+/* ===== COLORES EDITABLES: cambia estas variables para personalizar la paleta ===== */
+:root{
+  --azul:#2850a0; --azul-osc:#203070; --azul-claro:#e8eefa;
+  --dorado:#f0b018; --dorado-hover:#d99a0b; --naranja:#f09820; --rojo:#d9252a; --dorado-claro:#fdf3d6; --ok-claro:#e3f6ec;
+  --ink:#16233b; --muted:#566883; --line:#d7e1ee; --bg:#f5f8fc; --card:#fff; --warn:#b45309; --warn-bg:#fdf1de;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Segoe UI",Verdana,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5em}
+a{color:var(--azul)}
+:focus-visible{outline:3px solid var(--azul-osc);outline-offset:2px;box-shadow:0 0 0 2px #fff}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+section{padding:56px 0}
+.btn{display:inline-block;font:inherit;font-weight:700;border:2px solid var(--dorado);background:var(--dorado);color:var(--azul-osc);border-radius:999px;padding:11px 24px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--dorado-hover);border-color:var(--dorado-hover)}
+.btn.sec{background:transparent;color:var(--azul);border-color:var(--azul)}
+.btn.sec:hover{background:var(--azul-claro);border-color:var(--azul)}
+.btn.sm{padding:5px 14px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 2px 10px rgba(15,47,102,.06)}
+
+/* Encabezado y menú */
+header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:700 18px Georgia,serif;color:var(--azul-osc);text-decoration:none}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{display:block;padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--ink);font-size:15px}
+nav a:hover{background:var(--azul-claro)}
+@media(max-width:700px){.top{flex-direction:column;align-items:flex-start;padding:8px 0}nav a{padding:6px 10px;font-size:14px}}
+
+/* Portada */
+.hero{background:linear-gradient(135deg,var(--azul-osc),var(--azul));color:#fff;padding:72px 0 80px}
+.hero{position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:linear-gradient(90deg,var(--naranja) 0 40%,var(--dorado) 40% 75%,var(--rojo) 75%)}
+.hero h1{font-size:clamp(34px,6vw,56px);max-width:16ch}
+.hero p{max-width:50ch;font-size:18px;opacity:.92}
+.hero .btn{margin-top:10px;font-size:18px}
+.hero .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px;font-size:15px}
+.hero .stats b{display:block;font:700 28px Georgia,serif;color:#f6c744}
+
+/* Formulario */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.full{grid-column:1/-1}
+@media(max-width:640px){.form-grid{grid-template-columns:1fr}}
+label{display:block;font-weight:700;font-size:15px;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:11px 13px;border:1.5px solid #b9c7da;border-radius:10px;background:#fff;color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{border-color:#c0392b}
+.hint{font-size:13px;color:var(--muted);margin-top:3px}
+.error{color:#b3261e;font-size:14px;margin-top:3px;min-height:1px}
+.check{display:flex;gap:10px;align-items:flex-start;background:var(--dorado-claro);border-radius:10px;padding:12px}
+.check input{width:20px;height:20px;margin-top:3px;flex:none}
+.check label{margin:0;font-weight:600}
+.aviso{background:var(--warn-bg);color:var(--warn);border-radius:10px;padding:10px 14px;font-size:14px;margin-bottom:16px}
+
+/* Filtros y lista */
+.filtros{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:22px}
+@media(max-width:640px){.filtros{grid-template-columns:1fr}}
+.lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.rec h3{font-size:19px;margin:8px 0 6px}
+.rec p{margin:0 0 14px;color:#2d3d57}
+.pie{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border-radius:999px;padding:2px 11px;font-size:13px;font-weight:700;background:var(--azul-claro);color:var(--azul-osc)}
+.est-pendiente{background:#fdf1de;color:var(--warn)}
+.est-revision{background:#e6effb;color:var(--azul)}
+.est-atendida{background:var(--ok-claro);color:#14754a}
+.vacio{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px}
+
+/* Pasos */
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.paso .ic{width:52px;height:52px;border-radius:14px;background:var(--azul-claro);display:grid;place-items:center;font-size:26px;margin-bottom:10px}
+
+/* Panel admin */
+.tablero{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:800px){.tablero{grid-template-columns:1fr}}
+.col{background:var(--azul-claro);border-radius:16px;padding:14px;min-height:120px}
+.col h3{font-size:17px}
+.mini{background:#fff;border-radius:12px;padding:12px;margin-top:10px;border:1px solid var(--line);font-size:14px}
+.mini b{display:block;margin-bottom:6px}
+.mini .btn{margin:2px 2px 0 0}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:#2d3d57}
+
+/* Contacto y pie */
+.contacto{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+footer{background:var(--azul-osc);color:#d6e3f8;padding:30px 0;text-align:center;font-size:14px}
+
+/* Aviso de confirmación */
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);opacity:0;pointer-events:none;background:#14754a;color:#fff;padding:14px 22px;border-radius:12px;max-width:92vw;transition:.3s;z-index:50;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+#toast.on{opacity:1;transform:translateX(-50%)}
+/* Administrador */
+#adminBar{background:var(--azul-osc);color:#fff;padding:10px 0;font-size:15px}
+#adminBar .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#adminBar b{margin-right:auto}
+#adminBar .btn{border-color:#fff;color:#fff;background:transparent}
+#adminBar .btn:hover{background:rgba(255,255,255,.15)}
+.btn.danger{background:#b3261e;border-color:#b3261e;color:#fff}
+.btn.danger:hover{background:#8f1d17;border-color:#8f1d17}
+dialog{border:none;border-radius:16px;padding:24px;width:92vw;max-width:540px;max-height:90vh;color:var(--ink);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(15,47,102,.55)}
+dialog h2{font-size:22px}
+dialog .campo{margin-bottom:12px}
+dialog .acc{display:flex;gap:10px;justify-content:flex-end;margin-top:16px;flex-wrap:wrap}
+[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- ENCABEZADO: nombre y logotipo (edita ESCUELA más abajo en el script) -->
+<header>
+  <div class="wrap top">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <!-- Logotipo de la escuela (imagen incrustada en el archivo) -->
+      <img src="data:image/png;base64,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" alt="Logotipo de ICAM" width="44" height="44" style="display:block">
+      <span data-escuela>Escuela</span>
+    </a>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#enviar">Enviar</a></li>
+        <li><a href="#recomendaciones">Recomendaciones</a></li>
+        <li><a href="#como">¿Cómo funciona?</a></li>
+        <li id="navPanel" hidden><a href="#panel">Panel</a></li>
+        <li><a href="#" id="btnAdmin">Administrador</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- BARRA DE ADMINISTRADOR (solo visible tras iniciar sesión) -->
+<div id="adminBar" hidden>
+  <div class="wrap">
+    <b>Modo administrador</b>
+    <button class="btn sm" id="btnEditar" type="button">Editar página</button>
+    <button class="btn sm" id="btnRestaurar" type="button">Restaurar ejemplos</button>
+    <button class="btn sm" id="btnSalir" type="button">Salir</button>
+  </div>
+</div>
+
+<main>
+<!-- PORTADA -->
+<div class="hero" id="inicio">
+  <div class="wrap">
+    <h1 id="hTitulo">Tu opinión mejora nuestra escuela</h1>
+    <p id="hTexto">Estudiantes, docentes, familias y personal: cuéntanos qué se puede mejorar. Cada recomendación se revisa y su avance es público.</p>
+    <a class="btn" href="#enviar">Enviar una recomendación</a>
+    <div class="stats">
+      <div><b id="sTotal">0</b>recomendaciones</div>
+      <div><b id="sAt">0</b>atendidas</div>
+      <div><b id="sRev">0</b>en revisión</div>
+    </div>
+  </div>
+</div>
+
+<!-- FORMULARIO -->
+<section id="enviar">
+  <div class="wrap">
+    <h2>Enviar una recomendación</h2>
+    <div class="card">
+      <div class="aviso" role="note"><b>Versión de demostración:</b> las recomendaciones se guardan solo en este navegador y no llegan a la escuela. Para recibirlas de verdad se necesita un servidor y base de datos (ver sección Panel).</div>
+      <form id="form" novalidate class="form-grid">
+        <div class="full check">
+          <input type="checkbox" id="anonimo">
+          <label for="anonimo">Enviar de forma anónima <span class="hint" style="display:block;font-weight:400">No se guardará tu nombre ni ningún dato personal.</span></label>
+        </div>
+        <div id="boxNombre">
+          <label for="nombre">Nombre (opcional)</label>
+          <input id="nombre" maxlength="50" autocomplete="name">
+        </div>
+        <div>
+          <label for="cat">Categoría *</label>
+          <select id="cat" required aria-describedby="eCat"><option value="">Elige una categoría</option></select>
+          <div class="error" id="eCat"></div>
+        </div>
+        <div class="full">
+          <label for="titulo">Título *</label>
+          <input id="titulo" maxlength="80" required aria-describedby="eTit" placeholder="Ej: Más sombra en el patio">
+          <div class="error" id="eTit"></div>
+        </div>
+        <div class="full">
+          <label for="desc">Descripción *</label>
+          <textarea id="desc" maxlength="500" required aria-describedby="eDesc hDesc" placeholder="Explica qué propones y por qué ayudaría."></textarea>
+          <div class="hint" id="hDesc"><span id="cnt">0</span>/500 caracteres. No incluyas datos personales de otras personas.</div>
+          <div class="error" id="eDesc"></div>
+        </div>
+        <div class="full"><button class="btn" type="submit">Publicar recomendación</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- LISTADO -->
+<section id="recomendaciones" style="background:#fff">
+  <div class="wrap">
+    <h2>Recomendaciones de la comunidad</h2>
+    <div class="filtros">
+      <div><label for="buscar">Buscar</label><input id="buscar" type="search" placeholder="Palabra clave"></div>
+      <div><label for="fCat">Categoría</label><select id="fCat"><option value="">Todas</option></select></div>
+      <div><label for="fEst">Estado</label>
+        <select id="fEst"><option value="">Todos</option><option value="pendiente">Pendiente</option><option value="revision">En revisión</option><option value="atendida">Atendida</option></select></div>
+    </div>
+    <div class="lista" id="lista" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como">
+  <div class="wrap">
+    <h2>¿Cómo funciona?</h2>
+    <div class="pasos">
+      <div class="card paso"><div class="ic" aria-hidden="true">✍️</div><h3>1. Escribe tu idea</h3><p>Elige una categoría, ponle un título y explica tu propuesta. Puedes hacerlo de forma anónima.</p></div>
+      <div class="card paso"><div class="ic" aria-hidden="true">🔎</div><h3>2. Revisamos</h3><p>El equipo escolar lee cada recomendación y la marca como pendiente, en revisión o atendida.</p></div>
+      <div class="card paso"><div class="ic" aria-hidden="true">✅</div><h3>3. Ves el avance</h3><p>La comunidad apoya las ideas útiles y puede seguir su estado desde esta página.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL ADMINISTRATIVO (solo visual) -->
+<section id="panel" style="background:#fff" hidden>
+  <div class="wrap">
+    <h2>Panel de organización</h2>
+    <div class="aviso" role="note"><b>Seguridad limitada:</b> este panel solo se oculta con una contraseña guardada en el propio código de la página, así que alguien con conocimientos técnicos podría saltársela. Para un uso real se necesita inicio de sesión con servidor.</div>
+    <div class="tablero" id="tablero"></div>
+  </div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->
+<section id="faq">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Quién puede enviar recomendaciones?</summary><p>Cualquier integrante de la comunidad escolar: estudiantes, docentes, familias y personal.</p></details>
+    <details><summary>¿Mi recomendación anónima es realmente anónima?</summary><p>Al marcar la opción anónima, esta página no guarda tu nombre. En una versión con servidor, tampoco debería registrarse tu dirección IP ni tu cuenta.</p></details>
+    <details><summary>¿Cuánto tarda en revisarse?</summary><p>Los tiempos los define la escuela. El estado de cada recomendación se actualiza en esta página.</p></details>
+    <details><summary>¿Qué tipo de comentarios no se publican?</summary><p>Insultos, acusaciones a personas concretas o datos personales. Las recomendaciones deben ser respetuosas y constructivas.</p></details>
+    <details><summary>¿Dónde se guardan mis datos?</summary><p>En esta demostración, solo en tu navegador. Si borras los datos del navegador, se pierden.</p></details>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" style="background:#fff">
+  <div class="wrap">
+    <h2>Contacto con la escuela</h2>
+    <div class="contacto">
+      <div class="card"><h3>Dirección</h3><p data-dir></p></div>
+      <div class="card"><h3>Teléfono</h3><p data-tel></p></div>
+      <div class="card"><h3>Correo</h3><p><a data-mail href="#"></a></p></div>
+      <div class="card"><h3>Horario de atención</h3><p data-hor></p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><p>© <span data-escuela></span>. Datos de contacto y recomendaciones de ejemplo, editables.</p></div></footer>
+<!-- INICIO DE SESIÓN -->
+<dialog id="dLogin" aria-labelledby="tLogin">
+  <form id="fLogin" novalidate>
+    <h2 id="tLogin">Acceso de administrador</h2>
+    <label for="pass">Contraseña</label>
+    <input id="pass" type="password" autocomplete="current-password" required>
+    <div class="error" id="eLogin" role="alert"></div>
+    <div class="acc"><button class="btn sec" type="button" id="cLogin">Cancelar</button><button class="btn" type="submit">Entrar</button></div>
+  </form>
+</dialog>
+
+<!-- EDITAR PÁGINA -->
+<dialog id="dEditar" aria-labelledby="tEditar">
+  <form id="fEditar" novalidate>
+    <h2 id="tEditar">Editar página</h2>
+    <div class="campo"><label for="eNombre">Nombre de la escuela</label><input id="eNombre" maxlength="60"></div>
+    <div class="campo"><label for="eTitulo">Título de la portada</label><input id="eTitulo" maxlength="80"></div>
+    <div class="campo"><label for="eTexto">Texto de la portada</label><textarea id="eTexto" style="min-height:80px" maxlength="250"></textarea></div>
+    <div class="campo"><label for="eDir">Dirección</label><input id="eDir" maxlength="100"></div>
+    <div class="campo"><label for="eTel">Teléfono</label><input id="eTel" maxlength="30"></div>
+    <div class="campo"><label for="eMail">Correo</label><input id="eMail" type="email" maxlength="80"></div>
+    <div class="campo"><label for="eHor">Horario</label><input id="eHor" maxlength="80"></div>
+    <div class="campo"><label for="eClave">Nueva contraseña (opcional)</label><input id="eClave" type="password" autocomplete="new-password" placeholder="Déjala vacía para no cambiarla">
+      <div class="hint">Mínimo 6 caracteres.</div><div class="error" id="eClaveErr" role="alert"></div></div>
+    <div class="acc"><button class="btn sec" type="button" id="cEditar">Cancelar</button><button class="btn" type="submit">Guardar cambios</button></div>
+  </form>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ===== DATOS EDITABLES DE LA ESCUELA (ejemplo) ===== */
+const ESCUELA_BASE={nombre:"ICAM", titulo:"Tu opinión mejora nuestra escuela", texto:"Estudiantes, docentes, familias y personal: cuéntanos qué se puede mejorar. Cada recomendación se revisa y su avance es público.", direccion:"Calle Principal 123, Ciudad", telefono:"(000) 000 0000", correo:"contacto@escuela-ejemplo.mx", horario:"Lunes a viernes, 8:00 a 15:00"};
+/* Contraseña inicial del administrador: ICAM2026 (se guarda solo su "huella", pero NO es seguridad real). Cámbiala desde "Editar página". */
+const HASH_INICIAL="1d6773d75cd94d";
+const CFGK="config_demo_v1", CLAVEK="clave_hash_demo_v1";
+const CATEGORIAS=["Instalaciones","Docentes","Seguridad","Limpieza","Actividades","Tecnología","Convivencia escolar"];
+const ESTADOS={pendiente:"Pendiente",revision:"En revisión",atendida:"Atendida"};
+const KEY="recomendaciones_demo_v1", VKEY="votos_demo_v1";
+
+/* ===== ESTADO Y ALMACENAMIENTO (localStorage: solo en este navegador) ===== */
+const ejemplos=[
+ {id:1,autor:"Anónimo",cat:"Instalaciones",titulo:"Más sombra en el patio",desc:"En el recreo el sol pega muy fuerte. Unas lonas o árboles ayudarían a que todos puedan descansar.",estado:"revision",votos:18,fecha:"2026-09-14"},
+ {id:2,autor:"Mariana, 3.º grado",cat:"Tecnología",titulo:"Internet estable en el laboratorio",desc:"A veces se cae la conexión durante las clases de computación y no alcanzamos a terminar las actividades.",estado:"pendiente",votos:12,fecha:"2026-09-20"},
+ {id:3,autor:"Anónimo",cat:"Convivencia escolar",titulo:"Taller contra el acoso",desc:"Propongo una plática mensual donde aprendamos a respetarnos y a pedir ayuda cuando alguien nos molesta.",estado:"atendida",votos:25,fecha:"2026-08-30"},
+ {id:4,autor:"Padre de familia",cat:"Seguridad",titulo:"Mejor señalización a la salida",desc:"A la hora de salida hay mucho tráfico frente a la entrada. Un paso peatonal pintado y un guía vial harían la zona más segura.",estado:"revision",votos:21,fecha:"2026-09-02"},
+ {id:5,autor:"Anónimo",cat:"Limpieza",titulo:"Reponer jabón en los baños",desc:"Con frecuencia los dispensadores de jabón están vacíos antes del recreo.",estado:"atendida",votos:14,fecha:"2026-09-05"},
+ {id:6,autor:"Profesor de educación física",cat:"Actividades",titulo:"Torneos deportivos entre grupos",desc:"Un torneo trimestral fomentaría la convivencia y el trabajo en equipo entre los distintos grados.",estado:"pendiente",votos:9,fecha:"2026-10-01"}
+];
+function leer(k,def){try{const v=JSON.parse(localStorage.getItem(k));return v||def}catch(e){return def}}
+let datos=leer(KEY,ejemplos), votados=leer(VKEY,[]);
+function guardar(){try{localStorage.setItem(KEY,JSON.stringify(datos));localStorage.setItem(VKEY,JSON.stringify(votados))}catch(e){}}
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ===== DATOS DE LA ESCUELA EN LA PÁGINA ===== */
+let ESCUELA=Object.assign({},ESCUELA_BASE,leer(CFGK,{}));
+function aplicarConfig(){
+  document.querySelectorAll("[data-escuela]").forEach(e=>e.textContent=ESCUELA.nombre);
+  $("hTitulo").textContent=ESCUELA.titulo; $("hTexto").textContent=ESCUELA.texto;
+  document.querySelector("[data-dir]").textContent=ESCUELA.direccion;
+  document.querySelector("[data-tel]").textContent=ESCUELA.telefono;
+  document.querySelector("[data-hor]").textContent=ESCUELA.horario;
+  const m=document.querySelector("[data-mail]");m.textContent=ESCUELA.correo;m.href="mailto:"+ESCUELA.correo;
+}
+aplicarConfig();
+CATEGORIAS.forEach(c=>{$("cat").add(new Option(c,c));$("fCat").add(new Option(c,c))});
+
+/* ===== LISTADO CON BÚSQUEDA Y FILTROS ===== */
+function pintarLista(){
+  const q=$("buscar").value.toLowerCase().trim(), fc=$("fCat").value, fe=$("fEst").value;
+  const l=datos.filter(d=>(!fc||d.cat===fc)&&(!fe||d.estado===fe)&&(!q||(d.titulo+" "+d.desc).toLowerCase().includes(q)))
+    .sort((a,b)=>b.votos-a.votos);
+  $("lista").innerHTML=l.length?l.map(d=>`
+   <article class="card rec">
+     <div class="chips"><span class="chip">${esc(d.cat)}</span><span class="chip est-${d.estado}">${ESTADOS[d.estado]}</span></div>
+     <h3>${esc(d.titulo)}</h3><p>${esc(d.desc)}</p>
+     <div class="pie"><span>${esc(d.autor)} · ${esc(d.fecha)}</span>
+       <button class="btn sm ${votados.includes(d.id)?'':'sec'}" onclick="votar(${d.id})" aria-pressed="${votados.includes(d.id)}" aria-label="Marcar como útil: ${esc(d.titulo)}">👍 Útil (${d.votos})</button>
+       ${admin?`<button class="btn sm danger" onclick="borrar(${d.id})" aria-label="Eliminar: ${esc(d.titulo)}">Eliminar</button>`:""}</div>
+   </article>`).join(""):`<p class="vacio">No encontramos recomendaciones con esos filtros. Prueba con otra búsqueda.</p>`;
+}
+function votar(id){
+  const d=datos.find(x=>x.id===id),i=votados.indexOf(id);
+  if(i>-1){votados.splice(i,1);d.votos--}else{votados.push(id);d.votos++}
+  guardar();pintarTodo();
+}
+
+/* ===== PANEL (DEMO VISUAL) ===== */
+function pintarTablero(){
+  $("tablero").innerHTML=Object.keys(ESTADOS).map(est=>{
+    const items=datos.filter(d=>d.estado===est);
+    return `<div class="col"><h3>${ESTADOS[est]} (${items.length})</h3>`+items.map(d=>`
+      <div class="mini"><b>${esc(d.titulo)}</b>${esc(d.cat)}<br>
+      ${Object.keys(ESTADOS).filter(k=>k!==est).map(k=>`<button class="btn sm sec" onclick="mover(${d.id},'${k}')">→ ${ESTADOS[k]}</button>`).join("")}<button class="btn sm danger" onclick="borrar(${d.id})">Eliminar</button></div>`).join("")+`</div>`;
+  }).join("");
+}
+function mover(id,est){datos.find(x=>x.id===id).estado=est;guardar();pintarTodo();aviso("Estado actualizado a «"+ESTADOS[est]+"».")}
+
+function pintarStats(){
+  $("sTotal").textContent=datos.length;
+  $("sAt").textContent=datos.filter(d=>d.estado==="atendida").length;
+  $("sRev").textContent=datos.filter(d=>d.estado==="revision").length;
+}
+function pintarTodo(){pintarLista();pintarTablero();pintarStats()}
+
+/* ===== AVISOS ===== */
+let t;function aviso(msg){const e=$("toast");e.textContent=msg;e.classList.add("on");clearTimeout(t);t=setTimeout(()=>e.classList.remove("on"),4000)}
+
+/* ===== FORMULARIO Y VALIDACIÓN ===== */
+$("anonimo").onchange=()=>{const a=$("anonimo").checked;$("boxNombre").style.display=a?"none":"block";if(a)$("nombre").value=""};
+$("desc").oninput=()=>$("cnt").textContent=$("desc").value.length;
+function marca(id,eid,msg){const el=$(id);el.setAttribute("aria-invalid",msg?"true":"false");$(eid).textContent=msg;return !msg}
+$("form").onsubmit=e=>{
+  e.preventDefault();
+  const cat=$("cat").value, tit=$("titulo").value.trim(), des=$("desc").value.trim();
+  const ok=[
+    marca("cat","eCat",cat?"":"Elige una categoría."),
+    marca("titulo","eTit",tit.length>=5?"":"Escribe un título de al menos 5 caracteres."),
+    marca("desc","eDesc",des.length>=20?"":"Describe tu idea con al menos 20 caracteres.")
+  ].every(Boolean);
+  if(!ok){aviso("Revisa los campos marcados en rojo.");$("toast").style.background="#b3261e";setTimeout(()=>$("toast").style.background="",4100);return}
+  const anon=$("anonimo").checked, nom=$("nombre").value.trim();
+  datos.push({id:Date.now(),autor:anon||!nom?"Anónimo":nom,cat,titulo:tit,desc:des,estado:"pendiente",votos:0,fecha:new Date().toISOString().slice(0,10)});
+  guardar();$("form").reset();$("cnt").textContent=0;$("boxNombre").style.display="block";
+  pintarTodo();aviso("¡Gracias! Tu recomendación se publicó como «Pendiente».");
+  $("recomendaciones").scrollIntoView();
+};
+["buscar","fCat","fEst"].forEach(i=>$(i).addEventListener("input",pintarLista));
+
+/* ===== ADMINISTRADOR ===== */
+/* Huella simple (cyrb53) para no dejar la contraseña a la vista. No sustituye a un login real con servidor. */
+function huella(s){let h1=0xdeadbeef,h2=0x41c6ce57;for(let i=0,c;i<s.length;i++){c=s.charCodeAt(i);h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677)}h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);return (4294967296*(2097151&h2)+(h1>>>0)).toString(16)}
+let admin=false, fallos=0, bloqueo=0;
+function setAdmin(v){
+  admin=v;
+  $("adminBar").hidden=!v; $("navPanel").hidden=!v; $("panel").hidden=!v;
+  pintarTodo();
+}
+$("btnAdmin").onclick=e=>{e.preventDefault();if(admin){aviso("Ya estás en modo administrador.");return}$("eLogin").textContent="";$("dLogin").showModal();$("pass").focus()};
+$("cLogin").onclick=()=>{$("pass").value="";$("dLogin").close()};
+$("fLogin").onsubmit=e=>{
+  e.preventDefault();
+  if(Date.now()<bloqueo){$("eLogin").textContent="Demasiados intentos. Espera 30 segundos.";return}
+  if(huella($("pass").value)===leer(CLAVEK,HASH_INICIAL)){
+    fallos=0;$("pass").value="";$("dLogin").close();setAdmin(true);aviso("Modo administrador activado.");
+  }else{
+    fallos++;if(fallos>=5){bloqueo=Date.now()+30000;fallos=0}
+    $("eLogin").textContent="Contraseña incorrecta.";$("pass").select();
+  }
+};
+$("btnSalir").onclick=()=>{setAdmin(false);window.scrollTo(0,0);aviso("Saliste del modo administrador.")};
+
+function borrar(id){
+  if(!admin)return;
+  if(confirm("¿Eliminar esta recomendación? No se puede deshacer.")){
+    datos=datos.filter(x=>x.id!==id);votados=votados.filter(x=>x!==id);guardar();pintarTodo();aviso("Recomendación eliminada.");
+  }
+}
+$("btnRestaurar").onclick=()=>{
+  if(confirm("¿Volver a las recomendaciones de ejemplo? Se perderán las actuales.")){
+    datos=JSON.parse(JSON.stringify(ejemplos));votados=[];guardar();pintarTodo();aviso("Ejemplos restaurados.");
+  }
+};
+
+/* Editar textos de la página */
+$("btnEditar").onclick=()=>{
+  $("eNombre").value=ESCUELA.nombre;$("eTitulo").value=ESCUELA.titulo;$("eTexto").value=ESCUELA.texto;
+  $("eDir").value=ESCUELA.direccion;$("eTel").value=ESCUELA.telefono;$("eMail").value=ESCUELA.correo;$("eHor").value=ESCUELA.horario;
+  $("eClave").value="";$("eClaveErr").textContent="";$("dEditar").showModal();
+};
+$("cEditar").onclick=()=>$("dEditar").close();
+$("fEditar").onsubmit=e=>{
+  e.preventDefault();
+  const clave=$("eClave").value;
+  if(clave&&clave.length<6){$("eClaveErr").textContent="La contraseña debe tener al menos 6 caracteres.";return}
+  ESCUELA={nombre:$("eNombre").value.trim()||ESCUELA_BASE.nombre,titulo:$("eTitulo").value.trim()||ESCUELA_BASE.titulo,texto:$("eTexto").value.trim()||ESCUELA_BASE.texto,
+    direccion:$("eDir").value.trim(),telefono:$("eTel").value.trim(),correo:$("eMail").value.trim(),horario:$("eHor").value.trim()};
+  try{localStorage.setItem(CFGK,JSON.stringify(ESCUELA));if(clave)localStorage.setItem(CLAVEK,JSON.stringify(huella(clave)))}catch(err){}
+  aplicarConfig();$("dEditar").close();aviso(clave?"Cambios y nueva contraseña guardados.":"Cambios guardados.");
+};
+
+pintarTodo();
+</script>
+</body>
+</html>
